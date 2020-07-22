@@ -3,8 +3,8 @@ CREATE TABLE countries
         country_name varchar
             PRIMARY KEY,
         population BIGINT,
-        gdp_per_capita BIGINT,
-        hdi_rank BIGINT
+        gdp_per_capita float,
+        hdi_rank float
     );
 
 INSERT INTO public.countries (country_name, population, gdp_per_capita, hdi_rank)
