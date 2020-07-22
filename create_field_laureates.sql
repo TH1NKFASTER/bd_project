@@ -1,5 +1,7 @@
 CREATE TABLE field_laureates
     (
+        id serial
+            PRIMARY KEY,
         laureate_name varchar,
         country varchar,
         orgaization_name varchar,
@@ -235,14 +237,15 @@ INSERT INTO public.field_laureates (laureate_name, country, orgaization_name, pl
 VALUES ('Artur_Avila', 'Brazil', 'Federal_University_of_Rio_de_Janeiro', NULL, 29, 6, 1979, NULL, NULL, NULL);
 INSERT INTO public.field_laureates (laureate_name, country, orgaization_name, place_of_death, day_of_birth,
                                     month_of_birth, year_of_birth, day_of_death, month_of_death, year_of_death)
-VALUES ('Alan_Baker_(mathematician)', 'United_Kingdom', 'University_College_London', NULL, 19, 8, 1939, NULL, NULL,
+VALUES ('Alan_Baker', 'United_Kingdom', 'University_College_London', NULL, 19, 8, 1939, NULL, NULL,
         NULL);
 INSERT INTO public.field_laureates (laureate_name, country, orgaization_name, place_of_death, day_of_birth,
                                     month_of_birth, year_of_birth, day_of_death, month_of_death, year_of_death)
-VALUES ('James_Arthur_(mathematician)', 'Canada', 'University_of_Toronto', NULL, 18, 5, 1944, NULL, NULL, NULL);
+VALUES ('James_Arthur', 'Canada', 'University_of_Toronto', NULL, 18, 5, 1944, NULL, NULL, NULL);
 INSERT INTO public.field_laureates (laureate_name, country, orgaization_name, place_of_death, day_of_birth,
                                     month_of_birth, year_of_birth, day_of_death, month_of_death, year_of_death)
 VALUES ('John_G._Thompson', 'United_States_of_America', 'Yale_University', NULL, 13, 10, 1932, NULL, NULL, NULL);
 INSERT INTO public.field_laureates (laureate_name, country, orgaization_name, place_of_death, day_of_birth,
                                     month_of_birth, year_of_birth, day_of_death, month_of_death, year_of_death)
 VALUES ('Lars_Ahlfors', 'Finland', 'University_of_Helsinki', 'United_States_of_America', 18, 4, 1907, 11, 10, 1996);
+
