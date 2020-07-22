@@ -1,5 +1,6 @@
 CREATE TABLE abel_laureates
     (
+        id SERIAL PRIMARY KEY,
         laureate_name varchar,
         country_of_citizenship varchar,
         date_of_death varchar,
